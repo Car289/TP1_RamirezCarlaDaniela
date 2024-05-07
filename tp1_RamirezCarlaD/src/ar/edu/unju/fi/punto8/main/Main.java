@@ -8,17 +8,17 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int numero;
-		Scanner leer = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		CalculadoraEspecial calculadora = new CalculadoraEspecial();
 
 		System.out.print("Ingrese número: ");
-		numero = leer.nextInt();
+		numero = sc.nextInt();
 
 		calculadora.setN(numero);
 		calculadora.calcularSumatoria();
 		calculadora.calcularProductoria();
-
+		sc.close();
 	}
 
 }
